@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+  <div class="sticky top-0 text-white block overflow-hidden">
+    <!-- First Line -->
+    <div class="flex justify-between  bg-slate-300 items-center p-4">
+      <!-- Left Side (Button) -->
+      <button id="blog-btn" class="btn btn-primary text-black bg-lime-400 hover:bg-lime-500 font-extrabold">Blog</button>
+      
+      <!-- Center (Name) -->
+      <div class="text-lg font-semibold space-x-3 text-black flex flex-row"><div><img src="./assets/logo.png" class="h-8"></div><div>Donate Bangladesh </div></div>
+      
+      <!-- Right Side (Total Amount) -->
+      <div class="text-lg font-semibold flex flex-row">
+        <div><img src="./assets/coin.png" alt="" class="h-5 "></div>
+      <div id="total-balance">5500</div>
+      <div>BDT</div>
+    </div>
+    </div>
+
+    <!-- Second Line -->
+    <div class="flex justify-center space-x-4 p-2 ">
+      <!-- Button 1 -->
+      <button id="donate-btn" class="btn px-6 bg-white btn-success  hover:bg-lime-400">Donation</button>
+
+      <!-- Button 2 -->
+      <button id="history-btn" class="btn px-6 bg-white btn-success hover:bg-lime-400">History</button>
+    </div>
+  </div>
+
+  <div class="p-10">
+    <!-- Content goes here -->
+    <p class="text-white">Scroll down to see the sticky effect.</p>
+    <div class="h-screen">
+         <!-- Donation Cards -->        
+              <div id="donation-m" class=" mb-11 hidden space-y-6">
+        <!-- Card 1 -->
+        <div class="bg-gray-100 p-4 rounded-md shadow-md flex flex-col lg:flex-row">
+          <div class="w-full lg:w-1/2"><img src="./assets/noakhali.png" alt="Flood Relief" class="max-w-full min-h-96 object-cover rounded-md"></div>  
+            <div class="ml-4 flex flex-col justify-between w-full lg:w-1/2">
+               
+                
+                <div>
+                    <div class="flex flex-row p-1 space-x-2 w-1/5 rounded-lg bg-slate-200">
+                        <div><img src="./assets/coin.png" class="h-5"></div>
+                        <div id="keep-adj-money">0</div>
+                        <div>BDT</div>
+                    </div>
+                    <h2 class="font-semibold text-lg">Donate for Flood at Noakhali, Bangladesh</h2>
+                    <p class="text-gray-600 mt-2">
+                        The recent floods in Noakhali have caused significant damage to homes and infrastructure. Your donation helps provide essential supplies to those in need.
+                        Your generous donation will help provide immediate aid, including food, clean water, and medical supplies. Since mid-August 2024, Bangladesh has been devastated by flash floods, affecting over 5.82 million people, including 2.36 million children. This catastrophic event has caused widespread destruction, leaving many without shelter, food, or access to clean water and medical care. Please donate us amid this crisis that will help us to overcome this flood. Donate us. Donate in the bottom line line .input the amount of balance.
+
+                    </p>
+                </div>
+                <div class="flex items-center space-y-4 flex-col mt-4">
+                    <input type="number" id="input-adj-money" placeholder="Write Donation Amount" class="border w-full   border-gray-300 rounded px-4 py-2">
+                  
+<!-- Open the modal using ID.showModal() method -->
+
+
+ <!-- Open the modal using ID.showModal() method -->
+ <button id="btn-adj-money" class="btn w-full bg-lime-400"   onclick="my_modal_1.showModal()">Donate Now</button>
+ <dialog id="my_modal_1" class="modal">
+ 
+   <div class="modal-box justify-center flex items-center flex-col">
+     <h1 class="text-3xl font-bold justify-center flex items-center">Congrates!</h1>
+     <img src="./assets/coin.png" class="justify-center flex items-center h-7">
+     <p class="py-4 justify-center flex items-center">You have donated for humankind</p>
+     <h3 class="font-semibold justify-center flex items-center">Successfully</h3>
+     <div class="modal-action justify-center flex items-center">
+       <form method="dialog">
+         <!-- if there is a button in form, it will close the modal -->
+         <button class="btn justify-center flex items-center">Close confirmation</button>
+       </form>
+     </div>
+   </div>
+ </dialog>
+
+ 
+                      </div>
+                </div>
+            </div>
+        
+
+        <!-- Card 2 -->
+        <div class="bg-gray-100 p-4 rounded-md shadow-md flex w-full lg:flex-row flex-col">
+            <div class="w-full lg:w-1/2"><img src="./assets/feni.png" alt="Flood Relief" class="max-w-full min-h-96 object-cover rounded-md"></div>  
+            <div class="ml-4 flex flex-col justify-between w-full lg:w-1/2">
+
+                <div>
+                    <div class="flex flex-row p-1 space-x-2 w-1/5 rounded-lg bg-slate-200">
+                        <div><img src="./assets/coin.png" class="h-5"></div>
+                        <div id="keep-add-money">0</div>
+                        <div>BDT</div>
+                    </div>
+                <div>
+                    <h2 class="font-semibold text-lg">Donate for Flood Relief in Feni, Bangladesh</h2>
+                    <p class="text-gray-600 mt-2">
+                        The recent floods in Feni have devastated local communities. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies. Your donation helps provide essential supplies to those in need.
+                        Your donation helps provide essential supplies to those in need. Your donation helps provide essential supplies to those in need
+                        Your donation helps provide essential supplies to those in need
+                        Since mid-August 2024, Bangladesh has been devastated by flash floods, affecting over 5.82 million people, including 2.36 million children. This catastrophic event has caused widespread destruction, leaving many without shelter, food, or access to clean water and medical care.
+                        Please donate us amid this crisis that will help us to overcome this flood. Donate us. Donate in the bottom line line .input the amount of balance.
+                    </p>
+                </div>
+                <div class="flex items-center space-y-4 flex-col mt-4">
+                    <input type="number" id="input-add-money" placeholder="Write Donation Amount" class="border w-full   border-gray-300 rounded px-4 py-2">
+                  
+                    <button id="btn-add-money" class="btn w-full bg-lime-400"   onclick="my_modal_1.showModal()">Donate Now</button>
+                    <dialog id="my_modal_1" class="modal">
+                    
+                      <div class="modal-box justify-center flex items-center flex-col">
+                        <h1 class="text-3xl font-bold justify-center flex items-center">Congrates!</h1>
+                        <img src="./assets/coin.png" class="justify-center flex items-center h-7">
+                        <p class="py-4 justify-center flex items-center">You have donated for humankind</p>
+                        <h3 class="font-semibold justify-center flex items-center">Successfully</h3>
+                        <div class="modal-action justify-center flex items-center">
+                          <form method="dialog">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button class="btn justify-center flex items-center">Close confirmation</button>
+                          </form>
+                        </div>
+                      </div>
+                    </dialog>
+
+                </div>           
+            </div>
+        </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-gray-100 p-4 rounded-md shadow-md flex flex-col lg:flex-row w-full">
+           <div class="w-full lg:w-1/2"><img src="./assets/quota-protest.png" alt="Aid for Injured" class="max-w-full min-h-96 object-cover rounded-md"></div>
+            <div class="ml-4 flex flex-col justify-between w-full lg:w-1/2">                                                                        
+                <div>
+                    <div class="flex flex-row p-1 w-1/5 space-x-2 rounded-lg bg-slate-200">
+                        <div><img src="./assets/coin.png" class="h-5"></div>
+                        <div id="plus-money">0</div>
+                        <div>BDT</div>
+                    </div>
+                    <h2 class="font-semibold text-lg">Aid for Injured in the Quota Movement</h2>
+                    <p class="text-gray-600 mt-2">
+                        The recent Quota movement has resulted in numerous injuries. Your support helps provide medical assistance and necessary supplies for injured individuals.
+                        The protest began in June 2024, in response to the Supreme Court of Bangladesh reinstating a 30% quota for descendants of freedom fighters, reversing the government decision made in response to the 2018 Bangladesh quota reform movement. Students began to feel like they have a limited opportunity based on merit.
+                        Please donate your money for supporting us. please donate in the bottom position.
+                    </p>
+                </div>
+                <div class="flex items-center space-y-4 flex-col mt-4">
+                    <input type="number" id="plus-money-t" placeholder="Write Donation Amount" class="border w-full  border-gray-300 rounded px-4 py-2">
+
+                    <button id="plus-money-b" class="btn w-full bg-lime-400"   onclick="my_modal_1.showModal()">Donate Now</button>
+                    <dialog id="my_modal_1" class="modal">
+                    
+                      <div class="modal-box justify-center flex items-center flex-col">
+                        <h1 class="text-3xl font-bold justify-center flex items-center">Congrates!</h1>
+                        <img src="./assets/coin.png" class="justify-center flex items-center h-7">
+                        <p class="py-4 justify-center flex items-center">You have donated for humankind</p>
+                        <h3 class="font-semibold justify-center flex items-center">Successfully</h3>
+                        <div class="modal-action justify-center flex items-center">
+                          <form method="dialog">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button class="btn justify-center flex items-center">Close confirmation</button>
+                          </form>
+                        </div>
+                      </div>
+                    </dialog>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Donation card end-->
+    <!--Cash out history start -->
+    <div id="transition-his" class="hidden overflow-hidden space-y-6 mt-8">
+        <div id="trans-card">
+   
+
+      </div>
+    </div>
+      
+    <!--Cash out history end-->
+    <!--Q/N st-->
+<div id="question" class="hidden ">
+    <h1 class="text-3xl font-extrabold">Important FAQ</h1>
+    <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+        <div class="collapse-title text-xl font-medium">What is Document Object Model (DOM) ?</div>
+        <div class="collapse-content">
+          <p>DOM is a programming interface  for web documents.</p>
+        </div>
+      </div>
+      <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+        <div class="collapse-title text-xl font-medium">How Do you select an element from DOM ?</div>
+        <div class="collapse-content">
+          <p>The easiest way to access a single element in the DOM is by its unique ID .</p>
+        </div>
+      </div>
+      <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+        <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM , and why is it useful?</div>
+        <div class="collapse-content">
+          <p>Event delegation is a powerful technique that simplifies event handling, improves performance, and enhances the flexibility of your code. By leveraging the event bubbling mechanism, you can efficiently manage events on a group of elements rather than dealing with each one individually</p>
+        </div>
+      </div>
+      <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+        <div class="collapse-title text-xl font-medium">What is the event delegation in the context of the DOM and why is it useful DOM ?</div>
+
+        <div class="collapse-content">
+          <p>Manipulating Element Attributes
+            If you want to change other attributes like id , href , or src , you can use the setAttribute() method. The setAttribute() method accepts two arguments: The name of the attribute to set. The value of the attribute to set.</p>
+        </div>
+      </div>
+</div>
+    <!--Q/N end-->
+</div>
+
+
+
+ <script src="./js/utilities.js"></script>     
+ <script src="./js/add.js"></script>    
+ <script src="./js/adj.js"></script>
+ <script src="./js/plus.js"></script>
+ <script src="./js/features.js"></script>
+</body>
+</html>
